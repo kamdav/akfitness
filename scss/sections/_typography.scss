@@ -1,0 +1,147 @@
+//
+// Typography
+//
+
+.text-border {
+   p {
+      margin: 0;
+      padding: 10px;
+      color: $white;
+      border: 1px solid $white;
+      text-transform: uppercase;
+   }
+}
+
+.text-border-small {
+   p {
+      margin: 0;
+      padding: 5px;
+      color: $white;
+      border: 1px solid $white;
+      text-transform: uppercase;
+   }
+}
+
+.text-border-2 {
+   color: $white;
+   border: 1px solid $white;
+   text-transform: uppercase;
+}
+
+.exercise-list {
+   margin-top: 15px;
+
+   ul {
+      list-style: none;
+      padding: 5px 0;
+      margin: 0;
+
+      @media #{$xlarge-up} {
+         margin-left: 30px !important;
+      }
+   }
+
+   li { 
+      padding: 0px 0 5px 5px; 
+      text-indent: -20px;
+
+      font-size: 13px;
+      color: $white;
+
+      text-shadow: 1px 1px 1px black;
+   }
+
+   li:before {
+      padding-left: 5px;
+      content: "■ ";
+      font-size: 18px;
+      color: $primary-color;
+   }
+}
+
+.font-3 {
+   font-family: "EthnocentricRegular", "DINNeuzeitGroteskLightRegular", "DIN30640StdNeuzeitGroteskLight", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.hr-24 {
+   padding-right: 55px;
+
+   @media #{$xlarge-up} {
+      padding-right: 22px;
+   }
+
+   img {
+      width: 350px;
+   }
+
+   @media #{$large-up} {
+      margin-top: -75px;
+   }
+
+   @media #{$xlarge-up} {
+      margin-right: -100px;
+   }
+
+   h3 {
+      font-family: "EthnocentricRegular", "DINNeuzeitGroteskLightRegular", "DIN30640StdNeuzeitGroteskLight", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+   }
+
+   span {
+      font-family: "DINNeuzeitGroteskLightRegular", "DIN30640StdNeuzeitGroteskLight", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+   }
+}
+
+.text-1 {
+   margin-bottom: -22px;
+   font-size: 28px;
+   color: #a5a8ab;
+   @media #{$medium-only} {
+      font-size: 32px;
+   }
+   @media #{$small-only} {
+      margin-bottom: -18px;
+      font-size: 20px;
+   }
+}
+
+.text-2 {
+   font-size: 35px;
+   color: #d6de23;
+   @media #{$medium-only} {
+      font-size: 40px;
+   }
+   @media #{$small-only} {
+      font-size: 26px;
+   }
+}
+
+.text-3 {
+   margin-bottom: 0px;
+   color: #a5a8ab;
+}
+
+.text-4 {
+   color: #d6de23;
+}
+
+.bot-text {
+   @media #{$xlarge-up} {
+      margin-left: -100px;
+   }
+
+   i {
+      color: #d6de23;
+      font-size: 16px;
+   }
+
+   @media #{$large-up} {
+      i {
+         margin: 0 -20px 0 0px;
+      }
+
+      p {
+         margin-right: -10px;
+      }
+   }
+}

@@ -1,0 +1,419 @@
+//
+// General styles
+//
+
+body {
+  background: #1b1b1b url(../img/ak-fitness-background.jpg) no-repeat fixed center / cover;
+
+  @media #{$medium-only} {
+    background: url(../img/ak-fitness-background-tablet.jpg) no-repeat fixed center / cover;
+  }
+
+  @media #{$small-only} {
+    background: url(../img/ak-fitness-background-mobile.jpg) no-repeat fixed center / cover;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, li {
+  color: $white;
+
+  @media #{$medium-only}, #{$small-only} {
+    text-shadow: 1px 1px 1px black;
+  }
+}
+
+a {
+  color: $white;
+
+  &:hover {
+    color: #d4dc27;
+  }
+}
+
+.top-spacing {
+  margin-top: 20px;
+}
+
+.main-logo {
+  margin-top: 5%;
+  @media #{$large-up} {
+    margin-left: -10px;
+  }
+  @media #{$medium-only} {
+    img {
+      width: 50%;
+    }
+  }
+
+  @media #{$small-only} {
+    img {
+      width: 60%;
+    }
+  }
+}
+
+.soon-box {
+  padding-left: 15%;
+  padding-right: 15%;
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.soon-box-medium {
+  width: 100%;
+  margin-left: 35px;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.soon-box-small {
+  width: 100%;
+  margin-left: 25px;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  p {
+    font-size: 8px;
+  }
+
+  @media all and (max-width: 421px) {
+    width: 120%;
+    margin-left: 8px;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    p {
+      font-size: 6px;
+    }
+  }
+
+}
+
+.image-strip {
+  margin: 30px 0;
+
+  border-top: 1px solid #d4dc27;
+  border-bottom: 1px solid #d4dc27;
+
+  @media #{$small-only} {
+    margin: 30px 0 15px 0;
+  }
+}
+
+.img-content {
+  margin-top: 10px;
+}
+
+.social {
+  margin: 10px 0 50px -15px;
+
+  @media #{$large-up} {
+    margin-top: 0;
+  }
+
+  img {
+    height: 35px;
+    border-radius: 2px;
+
+    box-shadow: 1px 1px 1px black;
+
+    @media #{$medium-only} {
+      height: 30px;
+    }
+
+    @media #{$small-only} {
+      height: 20px;
+    }
+
+    @media all and (max-width: 421px) {
+      height: 10px;
+    }
+  }
+
+  li {
+    margin: 0 3px;
+    display: inline-block;
+  }
+
+  i {
+    margin: 0 5px;
+    color: #58595b;
+
+    &:hover {
+      color: #01aced;
+
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      -o-transition: ease-out 0.4s;
+      transition: ease-out 0.4s;
+    }
+  }
+
+
+  @media #{$small-only} {
+    margin-left: 15px;
+  }
+  
+  @media all and (max-width: 421px) {
+    margin-left: 15px;
+  }
+}
+
+.mobile-icon {
+  @media #{$large-up} {
+    margin-right: -15px;
+
+    img {
+      margin-top: 6px;
+      width: 7px;
+    }
+  }
+
+  @media #{$medium-only} {
+    margin-right: 5px;
+
+    img {
+      margin-top: -4px;
+      width: 8px;
+    }
+  }
+
+  @media #{$small-only} {
+    margin-right: 2px;
+
+    img {
+      margin-top: 1px;
+      width: 5px;
+    }
+  }
+
+  @media all and (max-width: 421px) {
+    margin-right: 2px;
+
+    img {
+      margin-top: 1px;
+      width: 3px;
+    }
+  }
+}
+
+.email-icon {
+  @media #{$large-up} {
+    margin-right: -15px;
+
+    img {
+      margin-top: 7px;
+      width: 17px;
+    }
+  }
+
+  @media #{$medium-only} {
+    margin-right: 5px;
+
+    img {
+      margin-top: -2px;
+      width: 17px;
+    }
+  }
+
+  @media #{$small-only} {
+    margin-right: 2px;
+
+    img {
+      margin-top: 2px;
+      width: 10px;
+    }
+  }
+
+  @media all and (max-width: 421px) {
+    margin-right: 2px;
+
+    img {
+      margin-top: 2px;
+      width: 7px;
+    }
+  }
+}
+
+.web-icon {
+  @media #{$large-up} {
+    margin-right: -15px;
+  
+    img {
+      margin-top: 5px;
+      width: 16px;
+    }
+  }
+
+  @media #{$medium-only} {
+    margin-right: 5px;
+  
+    img {
+      margin-top: -2px;
+      width: 16px;
+    }
+  }
+
+  @media #{$small-only} {
+    margin-right: 2px;
+  
+    img {
+      margin-top: 1px;
+      width: 10px;
+    }
+  }
+
+  @media all and (max-width: 421px) {
+    margin-right: 0px;
+  
+    img {
+      margin-top: 3px;
+      width: 7px;
+    }
+  }
+}
+
+.mobile-list {
+  margin: 0 auto;
+
+  @media #{$small-only} {
+    margin: 0px 0 -20px 35px;
+
+    p {
+      font-size: 10px;
+    }
+  }
+
+  @media #{$medium-only} {
+    margin: 0px 0 -10px 0px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  @media all and (max-width: 421px) {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: 7px;
+    margin-right: -25px;
+
+    p {
+      font-size: 6px;
+    }
+
+    li {
+      margin: -25px 0;
+    }
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.bullets {
+  @media #{$medium-only} {
+    width: 70%;
+    margin-left: 10%;
+  }
+
+  @media #{$small-only} {
+    width: 65%;
+    margin-left: 20%;
+  }
+}
+
+.image-content-1 {
+  @media #{$small-only} {
+    margin-left: 35px;
+  }
+  
+  @media all and (max-width: 421px) {
+    margin-left: 25px;
+    margin-right: -13px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid $white;
+  }
+}
+
+.image-content-2 {
+  @media #{$small-only} {
+    margin-left: 35px;
+  }
+  
+  @media all and (max-width: 421px) {
+    margin-left: 10px;
+    margin-right: -25px;
+  }
+}
+
+.custom-hidden-at-large-up {
+  @media #{$large-up} {
+    display: none !important;
+  }
+}
+
+.custom-hidden-at-medium-up {
+  @media #{$medium-up} {
+    display: none !important;
+  }
+}
+
+.pushed-left-large {
+  @media #{$large-up} {
+    margin-left: -50px;
+  }
+}
+
+.pushed-right-large {
+  @media #{$large-up} {
+    margin-right: -20px;
+  }
+}
+
+.space-left {
+  margin-left: 10px;
+}
+
+.strip-top {
+  @media #{$medium-only} {
+    margin-top: 50px;
+  }
+
+  @media #{$small-only} {
+    margin-top: 50px;
+  }
+}
+
+.hr-24-small {
+  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  @media #{$small-only} {
+    margin-top: -40px;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+
+  @media all and (max-width: 421px) {
+    margin-top: -55px;
+    margin-left: 30px;
+  }
+}
